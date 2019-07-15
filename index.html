@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<meta charset="utf-8">
+<title>TomoChain COMING SOON</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="icon" href="images/favico.png" type="image/x-icon"/>
+<link rel="shortcut icon" href="images/favico.png" type="image/x-icon"/>
+<!-- *** Font *** -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,400i,500|Nunito+Sans:300i,400,600,700,800,900|Quicksand:400,500,700&display=swap" rel="stylesheet"><!-- *** CSS *** -->
+<link href="css/common.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/homepage.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+	<div id="header">
+		<div class="container"><img src="images/logo-tomochain.png"></div>
+	</div><!-- /#header -->
+	<div id="contents">
+		<div class="container">
+			<div class="main_img">
+				<img class="icon-main" src="images/visual.svg">
+				<div class="icon-sub">
+					<img class="icon-gear-large" src="images/gear1.svg">
+					<img class="icon-gear-medium" src="images/gear2.svg">
+				</div>
+			</div>
+			<div class="con_intro">
+				<h2 class="title_basic_tmp1">
+					Tomobridge Will Be Launched At 3:00 Pm Singapore Time On Friday, June 28th, 2019
+				</h2>
+				<div class="tomochain-contest-countdown">
+					<div class="box-countdown">
+						<div id="clockdiv" class="inner-countdown">
+							<div class="txt-clock">
+								<span class="days"></span>
+								<div class="smalltext">Days</div>
+							</div>
+							<div class="cm-after">:</div>
+							<div class="txt-clock">
+								<span class="hours"></span>
+								<div class="smalltext">Hours</div>
+							</div>
+							<div class="cm-after">:</div>
+							<div class="txt-clock">
+								<span class="minutes"></span>
+								<div class="smalltext">Mins</div>
+							</div>
+							<div class="cm-after">:</div>
+							<div class="txt-clock">
+								<span class="seconds"></span>
+								<div class="smalltext">Secs</div>
+							</div>
+						</div>
+						<script>
+							function getTimeRemaining(endtime) {
+								var t = Date.parse(endtime) - Date.parse(new Date());
+								var seconds = Math.floor((t / 1000) % 60);
+								var minutes = Math.floor((t / 1000 / 60) % 60);
+								var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+								var days = Math.floor(t / (1000 * 60 * 60 * 24));
+								if (t <= 0) {
+									return {
+										'total': 0,
+										'days': 0,
+										'hours': 0,
+										'minutes': 0,
+										'seconds': 0
+									};
+								}
+								return {
+									'total': t,
+									'days': days,
+									'hours': hours,
+									'minutes': minutes,
+									'seconds': seconds
+								};
+							}
+							function initializeClock(id, endtime) {
+								var clock = document.getElementById(id);
+								var daysSpan = clock.querySelector('.days');
+								var hoursSpan = clock.querySelector('.hours');
+								var minutesSpan = clock.querySelector('.minutes');
+								var secondsSpan = clock.querySelector('.seconds');
+
+								function updateClock() {
+									var t = getTimeRemaining(endtime);
+
+									daysSpan.innerHTML = t.days;
+									hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+									minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+									secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+									if (t.total <= 0) {
+										clearInterval(timeinterval);
+									}
+								}
+
+								updateClock();
+								var timeinterval = setInterval(updateClock, 1000);
+							}
+							var time_update = "November 06 2019";
+							var deadline = new Date(time_update);
+							initializeClock('clockdiv', deadline);
+						</script>
+					</div><!-- /box-countdown -->
+				</div><!-- /tomochain-contest-countdown -->
+			</div>
+		</div>
+	</div><!-- /#contents -->
+	<div id="footer">
+		<div class="tomochain-social">
+			<ul class="social-links">
+				<li class="list-inline-item social-links__items">
+					<a class="social-links__link" href="https://www.facebook.com/tomochainofficial">
+						<span>facebook-f</span>
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</li>
+				<li class="list-inline-item social-links__items">
+					<a class="social-links__link" href="https://twitter.com/TomoChainANN">
+						<span>twitter</span>
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="list-inline-item social-links__items">
+					<a class="social-links__link" href="https://www.linkedin.com/company/tomochain/">
+						<span>linkedin-in</span>
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</li>
+				<li class="list-inline-item social-links__items">
+					<a class="social-links__link" href="https://t.me/tomochain">
+						<span>telegram-plane</span>
+						<i class="fab fa-telegram-plane"></i>
+					</a>
+				</li>
+				<li class="list-inline-item social-links__items">
+					<a class="social-links__link" href="https://tomochain.com/file/2018/09/wechat-qrcode.jpg">
+						<span>weixin</span>
+						<i class="fab fa-weixin"></i>
+					</a>
+				</li>
+				<li class="list-inline-item social-links__items">
+					<a class="social-links__link" href="https://www.reddit.com/r/Tomochain/">
+						<span>reddit-alien</span>
+						<i class="fab fa-reddit-alien"></i>
+					</a>
+				</li>
+				<li class="list-inline-item social-links__items">
+					<a class="social-links__link" href="https://github.com/tomochain">
+						<span>github</span>
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+				<li class="list-inline-item social-links__items">
+					<a class="social-links__link" href="https://gitter.im/tomochain/tomochain">
+						<span>gitter</span>
+						<i class="fab fa-gitter"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div><!-- /#footer -->
+</body>
+</html>

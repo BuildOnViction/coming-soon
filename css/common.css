@@ -1,0 +1,191 @@
+/* ===================================================================
+CSS information
+
+ file name  : common.css
+ author     : TomoChain
+ style info : Tomochain
+=================================================================== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+}
+
+.clearfix:after, .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -----------------------------------------------------------
+	Basic setting, link color etc.
+----------------------------------------------------------- */
+html {
+  font-size: small;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  background: #fff;
+  -webkit-text-size-adjust: none;
+  font-size: 108%;
+}
+.ie body {
+  font-size: 105%;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 100%;
+  }
+}
+body a {
+  color: #4d4d4d;
+}
+body a:link, body a:visited, body a:active {
+  text-decoration: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+.mouse body a:hover, .touch body a.touchstart {
+  text-decoration: none;
+  color: #666666;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+body img {
+  max-width: 100%;
+  -webkit-touch-callout: none;
+}
+
+body, pre, input, textarea, select {
+  font-family: "Quicksand", sans-serif;
+}
+
+input, select, textarea {
+  font-size: 100%;
+}
+
+html.ie8 .view_tab,
+html.ie8 .view_tab_sp,
+html.ie8 .view_sp {
+  display: none !important;
+}
+html.ie8 #page {
+  min-width: 1100px !important;
+  margin: auto;
+  font-size: 100% !important;
+}
+
+@media only screen and (min-width: 1025px) {
+  body .view_tab-sp, body .view_tab {
+    display: none !important;
+  }
+}
+@media print {
+  body .view_tab-sp, body .view_tab {
+    display: none !important;
+  }
+}
+.ie8 body .view_tab-sp, .ie8 body .view_tab {
+  display: none !important;
+}
+@media only screen and (min-width: 768px) {
+  body .view_sp {
+    display: none !important;
+  }
+}
+@media print {
+  body .view_sp {
+    display: none !important;
+  }
+}
+.ie8 body .view_sp {
+  display: none !important;
+}
+@media only screen and (max-width: 1024px) {
+  body .view_pc {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body .view_pc-tab, body .view_tab {
+    display: none !important;
+  }
+}
+
+.mouse .over {
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+.mouse .over:hover, .touch .over.touchstart {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+.touch .over {
+  -webkit-tap-highlight-color: transparent;
+}
+.touch .over.touchend {
+  -webkit-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button, button:focus, button:active, button:hover, button:visited,
+a, a:focus, a:active, a:hover, a:visited {
+  outline: 0;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ----------
+clearfix
+---------- */
+/* ----------
+container
+---------- */
+/* ----------
+Title
+---------- */
+.title_basic_tmp1 {
+  margin: 0 0 0.5em;
+  font-size: 143%;
+  font-weight: normal;
+  color: #fff;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .title_basic_tmp1 {
+    margin: 0 0 0.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title_basic_tmp1 {
+    margin: 0 0 1em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .title_basic_tmp1 {
+    font-size: 129%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title_basic_tmp1 {
+    font-size: 100%;
+  }
+}
