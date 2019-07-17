@@ -6,6 +6,6 @@ deploy:
   skip_cleanup: true
   github-token: $GH_TOKEN
   repo: tomochain/coming-soon
-  target-branch: master
+  target-branch: gh-pages
   on:
     branch: master
