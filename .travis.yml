@@ -1,11 +1,7 @@
-language: python
-python: "3.6"
-
 deploy:
   provider: pages
   skip_cleanup: true
   github-token: $GH_TOKEN
-  repo: tomochain/coming-soon
   target-branch: gh-pages
   on:
     branch: master
